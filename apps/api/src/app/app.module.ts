@@ -9,6 +9,7 @@ import { Reperatur } from '../entities/Reperatur';
 import { Kfz } from '../entities/Kfz';
 import { ReperaturStatus } from '../entities/ReperaturStatus';
 import { DbService } from './db.service';
+import { AddKfzColorColumn1583324048908 } from "../migration/1583324048908-AddKfzColorColumn";
 
 @Module({
   imports: [TypeOrmModule.forRoot({
@@ -27,7 +28,11 @@ import { DbService } from './db.service';
       Kfz,
       ReperaturStatus,
       Reperatur,
-    ]
+    ],
+    migrations: [
+      AddKfzColorColumn1583324048908
+    ],
+    migrationsRun: true,
   })],
   controllers: [AppController],
   providers: [AppService, DbService]

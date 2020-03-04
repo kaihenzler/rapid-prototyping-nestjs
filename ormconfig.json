@@ -1,0 +1,17 @@
+{
+  "name": "default",
+  "username": "workshop_prototype",
+  "password": "s4fePassword",
+  "database": "workshop_prototype",
+  "schema": "dbo",
+  "synchronize": false,
+  "type": "mssql",
+  "host": "localhost",
+  "port": 1433,
+  "entities": ["apps/api/src/entities/*.js"],
+  "migrationsTableName": "custom_migration_table",
+  "migrations": ["apps/api/dist/migration/*.ts"],
+  "cli": {
+    "migrationsDir": "apps/api/src/migration"
+  }
+}

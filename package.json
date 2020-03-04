@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "nx": "nx",
-    "start": "ng serve prototype",
+    "start": "ng serve workshop-prototype",
     "start:api": "ng serve api",
     "build": "ng build",
     "test": "ng test",
@@ -26,6 +26,7 @@
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
+    "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
     "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points"
   },
   "private": true,

@@ -19,6 +19,7 @@ export interface IKfz {
   id: number;
   regno: string | null;
   besitzer: string | null;
+  farbe: string | null;
 }
 
 export type IReperaturStatus = 'Termin' | 'Annahme' | 'Service' | 'Werkstatt' | 'Wäsche' | 'Abholung' | 'Abgeschlossen';

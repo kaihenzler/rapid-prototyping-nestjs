@@ -19,6 +19,9 @@ export class Kfz {
   @Column("varchar", { name: "besitzer", nullable: true, length: 100 })
   besitzer: string | null;
 
+  @Column("varchar", { name: "farbe", nullable: true, length: 50 })
+  farbe: string | null;
+
   @OneToMany(
     () => Reperatur,
     reperatur => reperatur.kfz
